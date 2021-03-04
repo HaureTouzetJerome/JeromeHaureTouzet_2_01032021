@@ -17,32 +17,77 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
 <body>
-  <header class="wrapper">
+  <!-- <header class="wrapper">
     <img src="images/logo/reservia.svg" alt="Réservia, hébergements de vacances">
     <nav>
       <ul>
-        <li><a href="#accommodation_$">Hébergements</a></li>
-        <li><a href="#activity_$">Activités</a></li>
+        <li><a href="#main-accommodation$">Hébergements</a></li>
+        <li><a href="#main-activity$">Activités</a></li>
       </ul>
     </nav>
-    <a class="blue" href="">S'inscrire</a>
-  </header>
+    <a class="blue" href="#">S'inscrire</a>
+  </header> -->
   <main>
     <div id="main-search" class="wrapper">
-      <p>Recherche</p>
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <h2>En plein centre ville ou en pleine nature</h2>
+      <div id="divSearch">
+        <div id="icoMap" class="bgGreyLight">
+          <i class="fas fa-map-marker-alt fa-lg"></i>
+        </div>
+        <input type="text" id="txtSearch" class="bdGreyLight" name="search" value="Marseille, France">
+        <button id="btnSearch" class="bgBlue">Rechercher</button>
+        <button id="btnSearch-sm" class="bgBlue">
+          <i class="fas fa-search fa-lg"></i>
+        </button>
+      </div>
+      <div id="divFilter">
+        <span id="lblFilter">Filtres</span>
+        <ul>
+          <li>
+            <div class="filter-icon">
+              <i class="fas fa-money-bill-wave blue"></i>
+            </div>
+            <span>Économique</span>
+          </li>
+          <li>
+            <div class="filter-icon">
+              <i class="fas fa-child blue"></i>
+            </div>
+            <span>Familial</span>
+          </li>
+          <li>
+            <div class="filter-icon">
+              <i class="fas fa-heart blue"></i>
+            </div>
+            <span>Romantique</span>
+          </li>
+          <li>
+            <div class="filter-icon">
+              <i class="fas fa-dog blue"></i>
+            </div>
+            <span>Animaux autorisés</span>
+          </li>
+        </ul>
+      </div>
+      <div id="divInfo">
+          <div class="icoInfo bdGreyLight"><i class="fas fa-info blue"></i></div>
+          <span>Plus de 500 logements sont disponibles dans cette ville</span>
+      </div>
     </div>
-    <section id="main-accommodation" class="wrapper grid">
+
+    <!-- <section id="main-accommodation" class="wrapper grid">
       <div id="accommodation">Hebergement</div>
       <div id="popular">Populaire</div>
     </section>
     <section id="main-activity" class="wrapper">
       <p>Activité</p>
-    </section>
+    </section> -->
   </main>
-  <footer class="wrapper grid">
+  <!-- <footer class="wrapper grid">
     <div id="footer-about">A propos</div>
     <div id="footer-accommodation">Nos hébergements</div>
     <div id="footer-assistance">Assistance</div>
-  </footer>
+  </footer> -->
 </body>
 </html>
