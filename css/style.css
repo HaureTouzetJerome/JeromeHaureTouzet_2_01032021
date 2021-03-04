@@ -71,48 +71,7 @@ header.wrapper{
 footer.wrapper{
   background-color: #444446;
 }
-@media all and (min-width: 650px) and (max-width: 1023px){
-  .wrapper{
-    padding: 0 30px;
-  }
-  header.wrapper{
-    background-color: #c0be5c;
-  }
-  #main-search.wrapper{
-    background-color: #8d8246;
-  }
-  #main-accommodation.wrapper{
-    background-color: #9e964e;
-  }
-  #main-activity.wrapper{
-    background-color: #b8ae54;
-  }
-  footer.wrapper{
-    background-color: #444446;
-  }
-}
-@media all and (max-width: 649px){
-  .wrapper{
-    min-width: 320px;
-    padding: 0 20px;
-  }
-  header.wrapper{
-    padding: 25px 0px 0px 0px;
-    background-color: #95c05c;
-  }
-  #main-search.wrapper{
-    background-color: #668d46;
-  }
-  #main-accommodation.wrapper{
-    background-color: #799e4e;
-  }
-  #main-activity.wrapper{
-    background-color: #92b854;
-  }
-  footer.wrapper{
-    background-color: #444446;
-  }
-}
+
 
 /* GRID */
 #main-accommodation.grid {
@@ -180,56 +139,10 @@ header > a{
   width: 120px;
   font-weight: bold;
 }
-@media all and (max-width: 649px){
-  header{
-    display: flex;
-    flex-wrap:wrap;
-    align-items: center;
-  }
-  header > img{
-    padding-top: 0px;
-    margin-left:20px;
-  }
-  header nav{
-    margin-top:30px;
-    width: 100%;
-    order:3;
-  }
-  nav ul{
-    display: flex;
-    width: auto;
-  }
-  header nav ul li {
-    text-align: center;
-    width: 50%;
-  }
-  header a {
-    height: auto;
-  }
-  header nav ul li a {
-    justify-content: center;
-    align-items: normal;
-    height: 35px;
-    width: 100%;
-    padding: 0px 0px 10px 0px;
-    background-color: salmon;
-  }
-  header nav ul li a:focus{
-    color:#0065FC;
-    border-top:none;
-    border-bottom: 3px solid #0065FC;
-  }
-  header > a{
-    width: auto;
-    order:2;
-    background-color: darkgoldenrod;
-    padding-bottom: 0px;
-    margin-right: 20px;
-  }
-}
 
 
-/*-- RECHERCHE */
+
+/*-- SEARCH */
 #main-search h1{
   font-size: 20px;
   font-weight:bold;
@@ -350,7 +263,115 @@ outline: none;
   white-space: normal;
   margin-left:12px;
 }
+
+
+
+/*@Media*/
+@media all and (max-width: 1023px){
+  /*@HEADER*/
+  .wrapper{
+    padding: 0 30px;
+  }
+  header.wrapper{
+    background-color: #c0be5c;
+  }
+  #main-search.wrapper{
+    background-color: #8d8246;
+  }
+  #main-accommodation.wrapper{
+    background-color: #9e964e;
+  }
+  #main-activity.wrapper{
+    background-color: #b8ae54;
+  }
+  footer.wrapper{
+    background-color: #444446;
+  }
+}
+@media all and (max-width: 649px){
+  /*@WRAPPER*/
+  .wrapper{
+    min-width: 320px;
+    padding: 0 20px;
+  }
+  header.wrapper{
+    padding: 25px 0px 0px 0px;
+    background-color: #95c05c;
+  }
+  #main-search.wrapper{
+    background-color: #668d46;
+  }
+  #main-accommodation.wrapper{
+    background-color: #799e4e;
+  }
+  #main-activity.wrapper{
+    background-color: #92b854;
+  }
+  footer.wrapper{
+    background-color: #444446;
+  }
+  /*@HEADER*/
+  header{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+  }
+  header > img{
+    padding-top: 0px;
+    margin-left:20px;
+  }
+  header nav{
+    margin-top:30px;
+    width: 100%;
+    order:3;
+  }
+  nav ul{
+    display: flex;
+    width: auto;
+  }
+  header nav ul li {
+    text-align: center;
+    width: 50%;
+  }
+  header a {
+    height: auto;
+  }
+  header nav ul li a {
+    justify-content: center;
+    align-items: normal;
+    height: 35px;
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    background-color: salmon;
+  }
+  header nav ul li a:focus{
+    color:#0065FC;
+    border-top:none;
+    border-bottom: 3px solid #0065FC;
+  }
+  header > a{
+    width: auto;
+    order:2;
+    background-color: darkgoldenrod;
+    padding-bottom: 0px;
+    margin-right: 20px;
+  }
+}
+@media all and (max-width: 496px){
+  /*@FILTER*/
+  #divFilter{
+    display:inline-block;
+  }
+  #lblFilter{
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  #divFilter li{
+    margin-right:5px;
+  }
+}
 @media all and (max-width: 425px){
+  /*@SEARCH*/
   #divSearch{
     margin-top: 40px;
   }
@@ -373,16 +394,5 @@ outline: none;
   #btnSearch-sm i{
     font-size: 16px;
   }
-}
-@media all and (max-width: 496px){
-  #divFilter{
-    display:inline-block;
-  }
-  #lblFilter{
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  #divFilter li{
-    margin-right:5px;
-  }
+
 }
