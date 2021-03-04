@@ -111,3 +111,37 @@ footer.wrapper{
     background-color: #444446;
   }
 }
+
+/* GRID */
+#main-accommodation.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  grid-template-areas:
+      "accomodation accomodation popular";
+}
+#accomodation {
+  grid-area: accomodation;
+}
+#popular {
+  grid-area: popular;
+}
+
+footer.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  grid-template-areas:
+      "about ourAccommodations assistance";
+}
+#footer-about {
+  grid-area: about;
+}
+#footer-accommodation {
+  grid-area: ourAccommodations;
+}
+#footer-assistance {
+  grid-area: assistance;
+}
