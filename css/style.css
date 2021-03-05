@@ -150,6 +150,41 @@ footer.wrapper{
   grid-area: cardP3;
 }
 
+/*gridActivite*/
+#main-activity{
+  display: grid;
+  grid-gap:40px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+      "title title title title"
+      "cardA1 cardA2 cardA4 cardA5"
+      "cardA1 cardA2 cardA4 cardA5"
+      "cardA1 cardA2 cardA4 cardA6"
+      "cardA1 cardA3 cardA4 cardA6";
+}
+#main-activity h2 {
+  grid-area: title;
+}
+#cardA1 {
+  grid-area: cardA1;
+}
+#cardA2 {
+  grid-area: cardA2;
+}
+#cardA3 {
+  grid-area: cardA3;
+}
+#cardA4 {
+  grid-area: cardA4;
+}
+#cardA5 {
+  grid-area: cardA5;
+}
+#cardA6 {
+  grid-area: cardA6;
+}
+
 footer.grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -436,6 +471,69 @@ main .cardPopular img{
   padding-bottom: 5px;
 }
 
+/*ACTIVITY*/
+#main-activity {
+  background-color: brown;
+  margin-top: 50px;
+}
+#main-activity .cardActivity{
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 2px 5px #c2c2c2;
+  background-color: white;
+}
+#cardA1{
+  height: 445px;
+}
+#cardA1 #imgContainerA1{
+  height: 400px;
+}
+#cardA2{
+  height: 225px;
+}
+#cardA2 #imgContainerA2{
+  height: 180px;
+}
+#cardA3{
+  height: 155px;
+}
+#cardA3 #imgContainerA3{
+  height: 110px;
+}
+#cardA4{
+  height: 445px;
+}
+#cardA4 #imgContainerA4{
+  height: 400px;
+}
+#cardA5{
+  height: 185px;
+}
+#cardA5 #imgContainerA5{
+  height: 135px;
+}
+#cardA6{
+  height: 220px;
+}
+#cardA6 #imgContainerA6{
+  height: 180px;
+}
+#main-activity .cardContent{
+  height: 20px;
+  margin: 15px;
+}
+#main-activity .cardContent h3{
+  font-weight: bold;
+}
+#main-activity .imgContainer{
+  width: 100%;
+}
+#main-activity img{
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 /*@MediaQuery*/
 
 /*@GRID*/
@@ -528,6 +626,52 @@ main .cardPopular img{
         "cardP2"
         "cardP3";
     border-radius: 0px;
+  }
+}
+
+@media all and (min-width: 806px) and (max-width: 1024px){
+  #main-activity{
+    display: grid;
+    grid-gap:40px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "title title"
+        "cardA1 cardA2"
+        "cardA1 cardA2"
+        "cardA1 cardA3"
+        "cardA1 cardA3"
+        "cardA4 cardA5"
+        "cardA4 cardA5"
+        "cardA4 cardA6"
+        "cardA4 cardA6";
+  }
+}
+@media all and (min-width: 580px) and (max-width: 805px){
+  #main-activity{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "title title"
+        "cardA1 cardA4"
+        "cardA2 cardA6"
+        "cardA5 cardA3";
+  }
+}
+@media all and (max-width: 579px){
+  #main-activity{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto ;
+    grid-template-areas:
+        "title"
+        "cardA1"
+        "cardA2"
+        "cardA3"
+        "cardA4"
+        "cardA5"
+        "cardA6";
   }
 }
 
@@ -680,3 +824,22 @@ main .cardPopular img{
     padding:0px;
   }
 }
+
+/*@ACTIVITY*/
+@media all and (max-width: 579px){
+  #main-activity{
+    margin-bottom: 30px;
+  }
+  #cardA1, #cardA2, #cardA3,
+  #cardA4, #cardA5, #cardA6{
+    height: auto;
+  }
+  #cardA1 #imgContainerA1,
+  #cardA2 #imgContainerA2,
+  #cardA3 #imgContainerA3,
+  #cardA4 #imgContainerA4,
+  #cardA5 #imgContainerA5,
+  #cardA6 #imgContainerA6{
+    height: 130px;
+  }
+}  
