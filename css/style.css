@@ -65,6 +65,12 @@ header.wrapper{
 #main-accommodation.wrapper{
   background-color: #4e789e;
 }
+#accommodation.wrapper{
+  background-color: #4e9e5b;
+  max-width:none;
+  margin:0;
+  padding:0;
+}
 #main-activity.wrapper{
   background-color: #5488b8;
 }
@@ -716,7 +722,7 @@ footer h3{
 }
 
 /*@WRAPPER*/
-@media all and (max-width: 1023px){
+@media all and (max-width: 1024px){
   .wrapper{
     padding: 0 30px;
   }
@@ -728,6 +734,19 @@ footer h3{
   }
   #main-accommodation.wrapper{
     background-color: #9e964e;
+    padding: 0;
+  }
+  #accommodation.wrapper{
+    background-color: #4e9e5b;
+    max-width:none;
+    margin:0;
+    padding:30px;
+  }
+  #popular.wrapper{
+    background-color: #9e4e5f;
+    max-width:none;
+    margin:0;
+    padding:30px;
   }
   #main-activity.wrapper{
     background-color: #b8ae54;
@@ -751,6 +770,19 @@ footer h3{
   }
   #main-accommodation.wrapper{
     background-color: #799e4e;
+    padding:0px;
+  }
+  #accommodation.wrapper{
+    background-color: #4e9e5b;
+    max-width:none;
+    margin:0;
+    padding:20px;
+  }
+  #popular.wrapper{
+    background-color: #9e4e5f;
+    max-width:none;
+    margin:0;
+    padding:20px;
   }
   #main-activity.wrapper{
     background-color: #92b854;
