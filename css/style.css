@@ -126,6 +126,30 @@ footer.wrapper{
   grid-area: displayMore;
 }
 
+#popular.grid{
+  display: grid;
+  grid-gap:35px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+      "title"
+      "cardP1"
+      "cardP2"
+      "cardP3";
+}
+#popular h2 {
+  grid-area: title;
+}
+#cardP1 {
+  grid-area: cardP1;
+}
+#cardP2 {
+  grid-area: cardP2;
+}
+#cardP3 {
+  grid-area: cardP3;
+}
+
 footer.grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -360,6 +384,57 @@ outline: none;
   letter-spacing: -3px;
 }
 
+/*POPULAR*/
+#popular{
+  background-color: brown;
+  padding:35px 35px 35px 35px;
+  border-radius: 20px 20px 20px 20px;
+}
+#popular #flexContainer-title{
+  display: flex;
+}
+#popular #flexContainer-title h2{
+  margin-right: auto;
+}
+#popular .flexContainerCard{
+  display: flex;
+}
+main .cardPopular{
+  width:100%;
+  height:100%;
+  max-width: 343px;
+  min-width:290px;
+  min-height: 143px;
+  border-radius: 15px;
+  box-shadow: 1px 2px 5px #c2c2c2;
+  background-color: white;
+  padding: 5px 5px 0px 5px;
+}
+main .cardPopular .imgContainer{
+  border-radius: 15px 15px 0 0;
+  width:42%;
+  height: 143px;
+  background-color: brown;
+}
+main .cardPopular img{
+  border-radius: 15px 0px 0 15px;
+  object-fit: cover;
+  width:100%;
+  height: 100%;
+  min-width: 125px;
+}
+#popular .cardContent{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+}
+#popular p{
+  padding-top: 8px;
+}
+#popular .starContainer{
+  padding-bottom: 5px;
+}
 
 /*@MediaQuery*/
 
@@ -374,6 +449,7 @@ outline: none;
         "accommodation";
   }
 }
+
 @media all and (min-width: 1025px) and (max-width: 1240px){
   #accommodation.grid{
     display: grid;
@@ -395,6 +471,7 @@ outline: none;
         "cardH1 cardH2 cardH3"
         "cardH4 cardH5 cardH6"
         "displayMore displayMore displayMore";
+    border-radius: 0px;
   }
 }
 @media all and (min-width: 580px) and (max-width: 899px){
@@ -407,6 +484,7 @@ outline: none;
         "cardH3 cardH4"
         "cardH5 cardH6"
         "displayMore displayMore";
+    border-radius: 0px;
   }
 }
 @media all and (max-width: 579px){
@@ -422,6 +500,33 @@ outline: none;
         "cardH6"
         "displayMore";
     padding: 35px 0px 0px 0px;
+    border-radius: 0px;
+  }
+}
+
+@media all and (min-width: 806px) and (max-width: 1024px){
+  #popular.grid{
+    display: grid;
+    grid-gap:35px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "title title"
+        "cardP1 cardP2"
+        "cardP3 cardP3";
+    border-radius: 0px;
+  }
+}
+@media all and (max-width: 805px){
+  #popular.grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "title"
+        "cardP1"
+        "cardP2"
+        "cardP3";
     border-radius: 0px;
   }
 }
@@ -563,5 +668,15 @@ outline: none;
 @media all and (max-width: 579px){
   #accommodation .accommodation-card {
     max-width: none;
+  }
+}
+
+/*@POPULAR*/
+@media all and (max-width: 579px){
+  #popular .cardPopular{
+    max-width: none;
+  }
+  #popular{
+    padding:0px;
   }
 }
