@@ -69,7 +69,8 @@ header.wrapper{
   background-color: #5488b8;
 }
 footer.wrapper{
-  background-color: #444446;
+  padding: 40px 50px 40px 50px;
+  background-color: darkgrey;
 }
 
 
@@ -534,6 +535,23 @@ main .cardPopular img{
   height: 100%;
 }
 
+/*FOOTER*/
+footer .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer h3{
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+#footer-about{
+  height: 110px;
+}
+#footer-accommodation, #footer-assistance{
+  height: 80px;
+}
+
 /*@MediaQuery*/
 
 /*@GRID*/
@@ -630,7 +648,7 @@ main .cardPopular img{
 }
 
 @media all and (min-width: 806px) and (max-width: 1024px){
-  #main-activity{
+  #main-activity.grid{
     display: grid;
     grid-gap:40px;
     grid-template-columns: auto auto;
@@ -648,7 +666,7 @@ main .cardPopular img{
   }
 }
 @media all and (min-width: 580px) and (max-width: 805px){
-  #main-activity{
+  #main-activity.grid{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
@@ -660,7 +678,7 @@ main .cardPopular img{
   }
 }
 @media all and (max-width: 579px){
-  #main-activity{
+  #main-activity.grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto ;
@@ -672,6 +690,28 @@ main .cardPopular img{
         "cardA4"
         "cardA5"
         "cardA6";
+  }
+}
+
+@media all and (min-width: 580px) and (max-width: 860px){
+  footer.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "about ourAccommodations"
+        ". assistance";
+  }
+}
+@media all and (max-width: 579px){
+  footer.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto ;
+    grid-template-areas:
+        "about"
+        "ourAccommodations"
+        "assistance";
   }
 }
 
@@ -693,7 +733,8 @@ main .cardPopular img{
     background-color: #b8ae54;
   }
   footer.wrapper{
-    background-color: #444446;
+    padding: 40px 30px 40px 30px;
+    background-color: darkgrey;
   }
 }
 @media all and (max-width: 649px){
@@ -715,7 +756,14 @@ main .cardPopular img{
     background-color: #92b854;
   }
   footer.wrapper{
-    background-color: #444446;
+    padding: 40px 20px 0px 20px;
+    background-color: darkgrey;
+  }
+}
+@media all and (max-width: 579px){
+  footer.wrapper{
+    padding: 40px 20px 0px 20px;
+    background-color: darkgrey;
   }
 }
 
@@ -842,4 +890,16 @@ main .cardPopular img{
   #cardA6 #imgContainerA6{
     height: 130px;
   }
-}  
+}
+
+/*FOOTER*/
+@media all and (min-width: 860px) and (max-width: 1024px){
+  #footer-accommodation, #footer-assistance{
+    margin-left:80px;
+  }
+}
+@media all and (max-width: 579px){
+  footer .content{
+    margin-bottom: 30px;
+  }
+}
