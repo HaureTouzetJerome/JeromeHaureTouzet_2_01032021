@@ -812,7 +812,7 @@ footer ul li{
 }
 
 /*@MEDIA-Filtre*/
-@media all and (max-width: 496px){
+@media all and (max-width: 426px){
   #divFilter{
     display:inline-block;
   }
@@ -820,8 +820,19 @@ footer ul li{
     display: inline-block;
     margin-bottom: 20px;
   }
+}
+@media all and (min-width: 376px) and (max-width: 426px){
   #divFilter li{
-    margin-right:5px;
+    margin-right:6px;
+    padding-left: 55px;
+    padding-right: 15px;
+  }
+}
+@media all and (max-width: 375px){
+  #divFilter li{
+    margin-right:4px;
+    padding-left: 49px;
+    padding-right: 15px;
   }
 }
 
